@@ -11609,6 +11609,13 @@ img {
 
 .nav-list1:hover, .nav-list2:hover, .nav-list3:hover, .nav-list4:hover, .nav-list5:hover, .nav-list6:hover {
   border-left: 4px solid #198754;
+}
+
+.nav-list1:hover .material-symbols-outlined, .nav-list2:hover .material-symbols-outlined, .nav-list3:hover .material-symbols-outlined, .nav-list4:hover .material-symbols-outlined, .nav-list5:hover .material-symbols-outlined, .nav-list6:hover .material-symbols-outlined {
+  color: #198754;
+}
+
+.nav-list1:hover a, .nav-list2:hover a, .nav-list3:hover a, .nav-list4:hover a, .nav-list5:hover a, .nav-list6:hover a {
   color: #198754;
 }
 
