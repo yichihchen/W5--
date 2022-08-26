@@ -6,53 +6,163 @@ current: index
 ---
 
 <div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+  <div class="header-assignment d-flex align-items-center justify-content-between">
+    <div class="header-course d-flex align-items-center ">
+      <h1 class="">Assignment</h1>
+      <p class="me-2">All Courses</p>
+      <a href="#"><span class="material-symbols-outlined">
+      expand_more
+      </span></a>
+     </div>
+    <div class="header-search">
+      <span class="material-symbols-outlined me-4">
+        search
+        </span>
+        <span class="material-symbols-outlined">
+          notifications_active
+          </span>
+    </div>
+   </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<!-- Dropdown-->
+<div class="d-flex"> <!--*card&dropdown-display-flex*-->
+  <div class="dropdown me-3">
+    <a class="dropdown-all btn btn-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      All(4)
+    </a>
+  
+    <div class="dropdown-menu">
+      <div class="list-group rounded-1" id="list-tab" role="tablist">
+             
+        <div class="list-group-item list-group-item-action active d-flex justify-content-between"  id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+          <div>
+          <p class="mb-1">Chapter Assignment 2</p>
+          <a class="list-group-a fw-bold" href="#">Please check this file…</a></div>
+          <div>
+          <p class="mb-2">4 hrs ago</p>
+          <p class="list-group-item-name mb-0" href="#">Emily Wang</p>  </div>      
+        </div>
+           
+        
+        <div class="list-group-item list-group-item-action active d-flex justify-content-between"  id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+          <div>
+          <p class="mb-1">Chapter Assignment 1</p>
+          <a class="fw-bold" href="#">My Homework</a></div>
+          <div>
+          <p class="mb-2">12 hrs ago</p>
+          <p class="list-group-item-name mb-0 " href="#">David Xu</p>  </div>      
+        </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="list-group-item list-group-item-action active d-flex justify-content-between"  id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+          <div>
+          <p class="mb-1">Final Assignment</p>
+          <a class="fw-bold" href="#">Have a problem with this…</a></div>
+          <div>
+          <p class="mb-2">18 hrs ago</p>
+          <p class="list-group-item-name mb-0" href="#">Tony Wei</p>  </div>      
+        </div>
+
+        <div class="list-group-item list-group-item-action active d-flex justify-content-between"  id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+          <div>
+          <p class="mb-1">Final Assignment</p>
+          <a class="fw-bold" href="#">Did I do it right?</a></div>
+          <div>
+          <p class="mb-2">19 hrs ago</p>
+          <p class="list-group-item-name mb-0" href="#">Christina Lin</p>  </div>      
+        </div>
+        
       </div>
     </div>
-  </div>
-</div>
+  </div> 
+
+<!-- card1-->
+<div class="card-outside">
+  <p class="card-outside-comment text-end mb-2">2 comments</p>
+  <div class="card mb-3">
+     <div class="card-header d-flex justify-content-between align-items-center">
+        <div class="card-header-title">
+        <p class="mb-1">Chapter Assignment 2 / HTML&CSS</p>
+        <h3 class="fw-bold mb-0">Please check this file for me, thanks!</h3>
+        </div>
+         <div class="card-header-action-bar">
+          <span class="material-symbols-outlined">
+          more_vert
+          </span>
+         </div>
+      </div>
+    <div class="card-body">
+      <div class="d-flex">
+        <img class="me-2" src="../assets/images/emilywang.jpeg" alt="emily">
+        <div>
+          <h5 class="card-title fw-bold mb-1">Emily Wang</h5>
+          <p class="card-time">10:38 AM (4 hours ago)</p>
+        </div>
+      </div>
+      
+      <p class="card-text">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the <span>img</span>? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+        What is the gap or extra space below image?</p>
+        <div class="btn btn-primary mb-3">      
+        <span class="material-symbols-outlined me-2">attach_file</span>
+        HW-2-David.zip</div>
+
+          <div class="card-body-andy p-0 pt-3 border-top"><!--AndyChen-card-->
+            <div class="d-flex justify-content-between">
+              <div class="d-flex">
+                <img class="me-2" src="../assets/images/andychen.jpeg" alt="Andy">              
+                <div >
+                  <h5 class="card-title fw-bold mb-1">Andy Chen (You)</h5>
+                  <p class="card-time">13:24 AM (1 hours ago)</p>
+                </div>
+              </div>
+              <div class="card-body-andy-icon">
+              <span class="material-symbols-outlined me-4">
+                star
+                </span>
+                <span class=" material-symbols-outlined " >
+                  edit
+                  </span>
+              </div>
+            </div>
+            <p class="card-text">Hi David, by default, an image is rendered inline, 
+              like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>
+              You can:
+              <br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;• adjust the<span class="text-success">&nbsp;vertical-align&nbsp;</span> of the image to position it elsewhere (e.g. the <span class="text-success">&nbsp;middle&nbsp;</span>) or <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;• change the <span class="text-success">display&nbsp;</span> so it isn’t inline.</p>
+          </div><!--AndyChen-card-->
+          
+        
+    </div><!--card-body-->
+    </div><!--card-->
+
+    <div class="d-flex justify-content-between">
+      <div class="arrow-icon d-inline-block">
+      <a href="#"><span class="material-symbols-outlined me-4">
+        arrow_back_ios
+        </span></a>
+        <a href="#"><span class="material-symbols-outlined">
+        arrow_forward_ios
+        </span></a> 
+      </div> 
+       <div class="button-all d-inline-block">
+         <button type="button" class="button-mark btn btn-white btn-lg btn-outline-success rounded-1 fs-6  fw-bold me-3">Mark as read</button>
+         <button type="button" class="button-reply btn btn-success btn-sm rounded-1 fs-6 fw-bold">Reply</button>
+       </div>
+    </div>
+  
+
+  </div><!--card-outside-->
+  </div><!--*card&dropdown-display-flex*-->
+
+    <!--button-->
+  
+
+  
+  
+  
+</div><!--container-->
+
+
+
+
+
