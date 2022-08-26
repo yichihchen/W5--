@@ -27,7 +27,12 @@
     border-left: 4px solid transparent;
   &:hover{
     border-left: 4px solid #198754;
-    color: #198754; 
+    .material-symbols-outlined{
+      color:#198754;
+    }
+    a{
+      color:#198754;
+    }
   }
 }
 .nav-list2,.nav-list3,.nav-list4,.nav-list5,.nav-list6{
