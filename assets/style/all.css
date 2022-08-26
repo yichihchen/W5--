@@ -11576,12 +11576,16 @@ img {
   padding: 0 32px;
 }
 
-.navbar {
-  background-color: red;
-  width: 30%;
+.nav {
+  background-color: #F8F9FA;
+  padding-top: 32px;
 }
 
-.navbar .navbar-andy {
+.nav .list-unstyled li {
+  padding-left: 32px;
+}
+
+.nav .nav-andy-img {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
@@ -11589,8 +11593,27 @@ img {
   border-radius: 50%;
 }
 
-.navbar .andy-email {
-  color: #6c757d;
+.nav .andy-email {
+  color: #6C757D;
+}
+
+.nav-img {
+  margin-left: 32px;
+  margin-bottom: 28px;
+}
+
+.nav-list1, .nav-list2, .nav-list3, .nav-list4, .nav-list5, .nav-list6 {
+  padding: 2px 0px;
+  border-left: 4px solid transparent;
+}
+
+.nav-list1:hover, .nav-list2:hover, .nav-list3:hover, .nav-list4:hover, .nav-list5:hover, .nav-list6:hover {
+  border-left: 4px solid #198754;
+  color: #198754;
+}
+
+.nav-list2, .nav-list3, .nav-list4, .nav-list5, .nav-list6 {
+  margin-top: 20px;
 }
 
 .header-assignment h1, .header-assignment .h1 {
@@ -11695,6 +11718,10 @@ img {
   background-color: #f8f9fa;
   color: #212529;
   padding: 8px 16px 8px 12px;
+}
+
+.button-all {
+  padding-bottom: 32px;
 }
 
 .button-mark {
