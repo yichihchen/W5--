@@ -1,18 +1,21 @@
 .nav{
   background-color:  #F8F9FA;
-   
+   width:296px;
+  
   padding-top: 32px;
 .list-unstyled{
   li{
     padding-left: 32px;
   }
-  
 }
   .nav-andy-img{
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
+  }
+  .nav-andy{
+    padding-left: 32px;
   }
   .andy-email{
     color:#6C757D;
