@@ -11578,6 +11578,7 @@ img {
 
 .nav {
   background-color: #F8F9FA;
+  width: 296px;
   padding-top: 32px;
 }
 
@@ -11591,6 +11592,10 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+.nav .nav-andy {
+  padding-left: 32px;
 }
 
 .nav .andy-email {
