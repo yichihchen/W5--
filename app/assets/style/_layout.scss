@@ -1,5 +1,5 @@
 .nav{
-  background-color:  #F8F9FA;
+  background-color: $gray-100;
    width:296px;
   
   padding-top: 32px;
@@ -30,12 +30,12 @@
     padding:2px 0px ;
     border-left: 4px solid transparent;
   &:hover{
-    border-left: 4px solid #198754;
+    border-left: 4px solid $success;
     .material-symbols-outlined{
-      color:#198754;
+      color:$success;
     }
     a{
-      color:#198754;
+      color:$success;
     }
   }
 }
